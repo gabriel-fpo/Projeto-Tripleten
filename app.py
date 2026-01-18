@@ -12,7 +12,7 @@ hist_checkbox = st.checkbox('Criar histograma')
 
 if hist_checkbox: # se o checkbox estiver marcado
     # escrever uma mensagem
-    st.write('Criando um histograma para o conjunto de dados de anúncios de vendas de carros')
+    st.write('Distribuição da quilometragem dos veículos anunciados')
     
     # criar um histograma
     fig = px.histogram(car_data, x="odometer")
@@ -25,7 +25,7 @@ scatter_checkbox = st.checkbox('Criar gráfico de dispersão')
 
 if scatter_checkbox: # se o checkbox estiver marcado
     # escrever uma mensagem
-    st.write('Criando um gráfico de dispersão para odometer vs price')
+    st.write("Relação entre Quilometragem e Preço dos Veículos")
     
     # criar um gráfico de dispersão
     fig = px.scatter(car_data, x="odometer", y="price")
